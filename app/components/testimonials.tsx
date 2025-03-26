@@ -126,7 +126,7 @@ export default function Testimonials() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            "
+            &quot;
           </motion.div>
           <motion.div 
             className="absolute bottom-10 right-10 text-6xl font-serif text-green-500/10"
@@ -135,7 +135,7 @@ export default function Testimonials() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            "
+            &quot;
           </motion.div>
           
           {/* Testimonial slider */}
@@ -195,7 +195,7 @@ export default function Testimonials() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                  "{testimonials[current].content}"
+                  &quot;{testimonials[current].content}&quot;
                 </motion.p>
                 
                 <motion.div 

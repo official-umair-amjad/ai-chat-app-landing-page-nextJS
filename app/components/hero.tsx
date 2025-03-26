@@ -1,15 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Button from "./ui/button";
-import { MessageSquare, Users, Zap, Shield, BookOpen, Heart } from "lucide-react";
+import { Users, Zap, Shield, BookOpen } from "lucide-react";
 
 export default function Hero() {
   const messageAnimation = {
     hidden: { opacity: 0, y: 20, scale: 0.9 },
-    visible: i => ({
-     opacity: 1,
+    visible: (i: number) => ({
+      opacity: 1,
       y: 0,
       scale: 1,
       transition: {
@@ -189,7 +188,7 @@ export default function Hero() {
                     variants={messageAnimation}
                   >
                     <div className="bg-green-600 text-white rounded-lg rounded-tr-none p-4 max-w-[80%]" style={{ backgroundColor: 'var(--primary)', color: 'var(--primary-foreground)' }}>
-                      <p className="text-base">Wa alaykumu s-salam! I'd like to learn more about Ramadan practices and traditions.</p>
+                      <p className="text-base">Wa alaykumu s-salam! I&apos;d like to learn more about Ramadan practices and traditions.</p>
                     </div>
                   </motion.div>
 
@@ -200,7 +199,7 @@ export default function Hero() {
                     variants={messageAnimation}
                   >
                     <div className="bg-gray-100 dark:bg-gray-800 rounded-lg rounded-tl-none p-4 max-w-[85%]" style={{ backgroundColor: 'var(--muted)' }}>
-                      <p className="text-base">I'd be happy to share information about Ramadan! Ramadan is the ninth month of the Islamic calendar, observed by Muslims worldwide as a month of fasting, prayer, reflection, and community. What specific aspects would you like to explore?</p>
+                      <p className="text-base">I&apos;d be happy to share information about Ramadan! Ramadan is the ninth month of the Islamic calendar, observed by Muslims worldwide as a month of fasting, prayer, reflection, and community. What specific aspects would you like to explore?</p>
                     </div>
                   </motion.div>
 
@@ -211,7 +210,7 @@ export default function Hero() {
                     variants={messageAnimation}
                   >
                     <div className="bg-green-600 text-white rounded-lg rounded-tr-none p-4 max-w-[80%]" style={{ backgroundColor: 'var(--primary)', color: 'var(--primary-foreground)' }}>
-                      <p className="text-base">I'm particularly interested in the spiritual benefits of fasting and recommended duas for breaking fast.</p>
+                      <p className="text-base">I&apos;m particularly interested in the spiritual benefits of fasting and recommended duas for breaking fast.</p>
                     </div>
                   </motion.div>
 
@@ -226,13 +225,13 @@ export default function Hero() {
                       <ul className="list-disc pl-6 mt-2 space-y-1 text-base">
                         <li>Increased God-consciousness (taqwa)</li>
                         <li>Self-discipline and self-control</li>
-                        <li>Gratitude for Allah's blessings</li>
+                        <li>Gratitude for Allah&apos;s blessings</li>
                         <li>Compassion for those less fortunate</li>
                         <li>Patience and stronger willpower</li>
                       </ul>
                       <p className="text-base mt-3">For breaking fast, a commonly recited dua is:</p>
-                      <p className="italic mt-1 text-base">"Allahumma inni laka sumtu, wa bika aamantu, wa 'alayka tawakkaltu, wa 'ala rizq-ika aftartu."</p>
-                      <p className="mt-2 text-base">Translation: "O Allah, I fasted for You, I believe in You, I put my trust in You, and I break my fast with Your sustenance."</p>
+                      <p className="italic mt-1 text-base">&quot;Allahumma inni laka sumtu, wa bika aamantu, wa &apos;alayka tawakkaltu, wa &apos;ala rizq-ika aftartu.&quot;</p>
+                      <p className="mt-2 text-base">Translation: &quot;O Allah, I fasted for You, I believe in You, I put my trust in You, and I break my fast with Your sustenance.&quot;</p>
                     </div>
                   </motion.div>
 
@@ -243,7 +242,7 @@ export default function Hero() {
                     variants={messageAnimation}
                   >
                     <div className="bg-green-600 text-white rounded-lg rounded-tr-none p-4 max-w-[80%]" style={{ backgroundColor: 'var(--primary)', color: 'var(--primary-foreground)' }}>
-                      <p className="text-base">That's very helpful, thank you! Are there specific activities recommended during Ramadan nights?</p>
+                      <p className="text-base">That&apos;s very helpful, thank you! Are there specific activities recommended during Ramadan nights?</p>
                     </div>
                   </motion.div>
 
@@ -259,10 +258,10 @@ export default function Hero() {
                         <li>Taraweeh prayers - special night prayers performed in congregation</li>
                         <li>Reading and reflecting on the Quran</li>
                         <li>Dhikr (remembrance of Allah)</li>
-                        <li>I'tikaf (spiritual retreat in the mosque) during the last ten days</li>
+                        <li>I&apos;tikaf (spiritual retreat in the mosque) during the last ten days</li>
                         <li>Searching for Laylat al-Qadr (the Night of Power)</li>
                       </ul>
-                      <p className="text-base mt-3">Laylat al-Qadr is especially significant as it's considered better than a thousand months of worship. Many Muslims increase their prayers and good deeds during this time.</p>
+                      <p className="text-base mt-3">Laylat al-Qadr is especially significant as it&apos;s considered better than a thousand months of worship. Many Muslims increase their prayers and good deeds during this time.</p>
                     </div>
                   </motion.div>
                 </motion.div>

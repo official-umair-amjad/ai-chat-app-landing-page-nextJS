@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "../utils/cn";
 import Button from "./ui/button";

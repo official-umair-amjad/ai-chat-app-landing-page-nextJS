@@ -120,7 +120,7 @@ export default function Pricing() {
                   ? "border-green-500/50 relative scale-105 shadow-xl z-10"
                   : "border-gray-200 dark:border-gray-700"
               }`}
-              style={{ backgroundColor: 'var(--background)', borderColor: plan.popular ? null : 'var(--border)' }}
+              style={{ backgroundColor: 'var(--background)', borderColor: plan.popular ? 'transparent' : 'var(--border)' }}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
